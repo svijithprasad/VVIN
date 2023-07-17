@@ -277,10 +277,7 @@ background: #F3F3F3;
 }
 @media only screen and (max-width: 900px){
   
-  footer{
-    position: relative;
-  }
-  
+
   p{
         font-size: 13px;
     }
