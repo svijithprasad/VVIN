@@ -166,7 +166,7 @@ footer {
     text-align: center;
   text-align: center;
   padding: 20px;
-  position: fixed;
+  position: relative;
   bottom: 0;
   left: 0;
   right: 0;
