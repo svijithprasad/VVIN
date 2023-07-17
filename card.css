@@ -1,0 +1,148 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,600&display=swap');
+
+
+*{
+  font-family: 'Source Code Pro', monospace;
+}
+.card {
+    width: 190px;
+    height: 280px;
+    background: rgb(0, 0, 0);
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 20px;
+    
+  }
+  
+  .card:hover {
+    width: 190px;
+    height: 280px;
+    background: rgb(255, 255, 255);
+    border: 2px solid rgb(200, 200, 200);
+    border-radius: 20px;
+    background-color: #dfdfdf;
+    transition: all .5s;
+  }
+  
+  .secondAnimation {
+    --hoverContorno: #959595;
+  }
+  
+  .secondAnimation:hover,
+  .secondAnimation:focus {
+    -webkit-animation: cardAnimacion 1.4s;
+    animation: cardAnimacion 1.4s;
+    box-shadow: 0 0 0 0.8em rgba(255, 255, 255, 0);
+    border-radius: 20px;
+  }
+  
+  @-webkit-keyframes cardAnimacion {
+    0% {
+      box-shadow: 0 0 0 0 var(--hoverContorno);
+    }
+  }
+  
+  @keyframes cardAnimacion {
+    0% {
+      box-shadow: 0 0 0 0 var(--hoverContorno);
+    }
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+  }
+  
+  @keyframes blink-caret {
+    50% {
+      border-color: transparent;
+    }
+  }
+  /* When you change the amount of characters in the h1, you have to change 
+  the with: 14ch and  steps(14, end), if there is 14 characters, put 14, 
+  if there is 20 put 20 */
+  .animation {
+    font: bold 200% white;
+    border-right: .1em solid rgb(255, 255, 255);
+    width: 13.20ch;
+    margin: auto;
+    margin-top: 60px;
+    
+    white-space: nowrap;
+    overflow: hidden;
+    -webkit-animation: typing 1s steps(13, end),
+                 blink-caret .5s step-end infinite alternate;
+    
+                 
+  }
+  
+  
+  
+
+  
+
+  .spinner {
+    --size: 20px;
+    --first-block-clr: #ff4655;
+    --second-block-clr: rgb(255, 255, 255);
+    --clr: #111;
+    width: 100px;
+    height: 100px;
+    position: relative;
+   }
+   
+   .spinner::after,.spinner::before {
+    box-sizing: border-box;
+    position: absolute;
+    content: "";
+    width: var(--size);
+    height: var(--size);
+    top: 50%;
+    animation: up 2.4s cubic-bezier(0, 0, 0.24, 1.21) infinite;
+    left: 50%;
+    background: var(--first-block-clr);
+   }
+   
+   .spinner::after {
+    background: var(--second-block-clr);
+    top: calc(50% - var(--size));
+    left: calc(50% - var(--size));
+    animation: down 2.4s cubic-bezier(0, 0, 0.24, 1.21) infinite;
+   }
+   
+   @keyframes down {
+    0%, 100% {
+     transform: none;
+    }
+   
+    25% {
+     transform: translateX(100%);
+    }
+   
+    50% {
+     transform: translateX(100%) translateY(100%);
+    }
+   
+    75% {
+     transform: translateY(100%);
+    }
+   }
+   
+   @keyframes up {
+    0%, 100% {
+     transform: none;
+    }
+   
+    25% {
+     transform: translateX(-100%);
+    }
+   
+    50% {
+     transform: translateX(-100%) translateY(-100%);
+    }
+   
+    75% {
+     transform: translateY(-100%);
+    }
+   }
+   

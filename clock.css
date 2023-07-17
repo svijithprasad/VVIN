@@ -1,0 +1,36 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Code+Pro:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,600&display=swap');
+
+*{
+    font-family: 'Source Code Pro', monospace;
+}
+#clock{
+    
+    position: absolute;
+    font-size: 1.2vw;
+    color: white;
+    margin-left: 86%;
+    
+    margin-top: 100px;
+    
+}
+
+.timeemoji{
+    position: absolute;
+    margin-top: 96px;
+    margin-left: 84%;
+    font-size: 20px;
+}
+
+@media only screen and (max-width: 900px){
+    #clock{
+        font-size: 20px;
+        margin: 90px 40px;
+        
+        
+    }
+
+    .timeemoji{
+        margin: 91px 16px;
+        font-size: 18px;
+    }
+}

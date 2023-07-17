@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css?family=Open Sans');
+@import url('https://fonts.googleapis.com/css?family=Sofia');
+* {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+    font-family: "Open Sans",sans-serif;
+    box-sizing: border-box;
+}    
+body{
+    background-color: peachpuff;
+    
+
+}
+header{
+    width: 100%;
+    height: 80px;
+    background-color: #11101b;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 100px;
+    background-image: url("dbqaiup-418e858d-0625-4931-9fa2-9b2787503735.png");
+
+}
+.bg{
+    width: 100%;
+    background: url("https://media.giphy.com/media/V69LhUggYIg6qmKUoD/giphy.gif");
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.logo{
+    font-family: "Sofia";
+    font-size: 40px;
+    font-weight: bold;
+    color: black;
+    font-weight: bolder;
+    text-shadow: 100vh;
+    
+
+}
+.ham{
+    display: none;
+    cursor: pointer;  
+
+}
+.nav-bar ul{
+    display: flex;
+}
+.nav-bar ul li a{
+    font-weight: bold;
+    display: block;
+    color:  black;
+    font-size: 20px;
+    padding: 10px 20px;
+    border-radius: 50px;
+    transition: 0.2s;
+    margin: 0 5px;
+    text-decoration: none;
+}
+.nav-bar ul li a:hover{
+    color:#11101b;
+    background: #fefefe;
+}
+.nav-bar ul li a.active{
+color: #11101b;
+background: #fefefe;
+}
+@media only screen and (max-width: 1320px){
+    header{
+        padding: 0 50px;
+    }
+}
+@media only screen and (max-width: 1100px){
+    header{
+        padding: 0 30px;
+    }
+}
+@media only screen and (max-width: 900px){
+    .ham{
+        display: block;
+        cursor: pointer;
+
+    }
+    .ham .line {
+        width: 30px;
+        height: 3px;
+        background: #000000;
+        margin: 6px 0;
+    }
+   
+    .nav-bar{
+        height: 0;
+        position: absolute;
+        top: 80px;
+        left: 0;
+        right: 0;
+        width: 100vw;
+        background-image: url("dropdownav.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        transition: 0.5s;
+        overflow: hidden;
+    }
+    .nav-bar.active {
+        height: 450px;;
+    }
+    .nav-bar ul{
+        display: block;
+        width: fit-content;
+        margin: 80px auto 0 auto;
+        text-align: center;
+        transition: 0.5s;
+        opacity: 0;
+    }
+    .nav-bar.active ul{
+        opacity: 1;
+    }
+
+    .nav-bar ul li a{
+        margin-bottom: 12px;
+        
+    }
+
+.slider{
+  
+    width: 800px;
+    height: 500px;
+    border-radius: 10px;
+    overflow: hidden;
+  
+  }
+  
+  .slides{
+    width: 500%;
+    height: 500px;
+    display: flex;
+  
+  }
+  
+  .slides input{
+    display: none;
+  }
+  
+  .slide{
+    width: 20%;
+    transition: 2s;
+  }
+  
+  .slide img{
+    width: 800px;
+    height: 500px;
+  }
+  
+
+  
+  .navigation-manual{
+    position: absolute;
+    width: 800px;
+    margin-top: -40px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .manual-btn{
+    border: 2px solid #40D3DC;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+  }
+  
+  .manual-btn:not(:last-child){
+    margin-right: 40px;
+  }
+  
+  .manual-btn:hover{
+    background: #40D3DC;
+  }
+  
+  #radio1:checked ~ .first{
+    margin-left: 0;
+  }
+  
+  #radio2:checked ~ .first{
+    margin-left: -20%;
+  }
+  
+  #radio3:checked ~ .first{
+    margin-left: -40%;
+  }
+  
+ 
+  
+ 
+  
+  .navigation-auto{
+    position: absolute;
+    display: flex;
+    width: 800px;
+    justify-content: center;
+    margin-top: 460px;
+  }
+  
+  .navigation-auto div{
+    border: 2px solid #40D3DC;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 1s;
+  }
+  
+  .navigation-auto div:not(:last-child){
+    margin-right: 40px;
+  }
+  
+  #radio1:checked ~ .navigation-auto .auto-btn1{
+    background: #40D3DC;
+  }
+  
+  #radio2:checked ~ .navigation-auto .auto-btn2{
+    background: #40D3DC;
+  }
+  
+  #radio3:checked ~ .navigation-auto .auto-btn3{
+    background: #40D3DC;
+  }
+}
+  
+
+
+        
+
+    
