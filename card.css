@@ -64,13 +64,13 @@
   .animation {
     font: bold 200% white;
     border-right: .1em solid rgb(255, 255, 255);
-    width: 13.20ch;
+    width: 12.20ch;
     margin: auto;
     margin-top: 60px;
     
     white-space: nowrap;
     overflow: hidden;
-    -webkit-animation: typing 1s steps(13, end),
+    -webkit-animation: typing 1s steps(12, end),
                  blink-caret .5s step-end infinite alternate;
     
                  
