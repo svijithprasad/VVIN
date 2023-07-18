@@ -17,6 +17,21 @@ body{
 
 }
 
+#timeleft{
+  position: absolute;
+  margin-top: 120px;
+  color: white;
+  margin-left: 50px;
+}
+
+#launch{
+  position: absolute;
+  margin-top: 100px;
+  margin-left: 50px;
+  color: white;
+
+}
+
 .hanime{
   width: 100%;
   height: 550px;
@@ -34,12 +49,7 @@ body{
 }
 
 
-i{
-  color: white;
-}
-i:hover{
-  color: #ff4655;
-}
+
 
 
 
@@ -199,11 +209,11 @@ footer {
 }
 
 svg {
-    font-family: "consolas", sans-serif;
+    
     width: 100%; height: 100%;
     }
     svg text {
-    animation: stroke 4s infinite alternate;
+    animation: stroke 3s infinite alternate;
     stroke-width: 1;
     stroke: #F3F3F3;
     font-size: 70px;
@@ -282,15 +292,33 @@ background: #F3F3F3;
 }
 @media only screen and (max-width: 900px){
   
+  
+  #timeleft{
+    position: absolute;
+    margin-top: 590px;
+    color: white;
+    margin-left: 20px;
+  }
+  
+  #launch{
+    position: absolute;
+    margin-top: 570px;
+    margin-left: 20px;
+    color: white;
+  
+  }
 
   p{
         font-size: 13px;
     }
     svg text{
       font-size: 50px;
-      
-
     }
+
+   #logotext{
+    x: 5%;
+    y: 
+   }
    
     .fancy{
       margin: 30px 2px;
