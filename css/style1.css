@@ -41,10 +41,14 @@ body{
 .socials{
   margin-left:  90px;
   font-size: 2em;
+  position: relative;
+  color:#F3F3F3;
+  float: left;
 }
 
 .socials:hover{
   cursor: pointer;
+ 
   
 }
 
@@ -52,7 +56,9 @@ body{
 
 
 
-
+i:hover{
+  color: #FF4655;
+}
 
 
  
@@ -172,10 +178,7 @@ header{
   justify-content: space-evenly;
   
 }
-.socials{
-  color:#F3F3F3;
-  float: left;
-}
+
 footer {
     padding: 20px;
     text-align: center;
@@ -290,7 +293,10 @@ background: #F3F3F3;
         padding: 0 30px;
     }
 }
-@media only screen and (max-width: 900px){
+
+
+
+@media only screen and (max-width: 800px){
   
   
   #timeleft{
@@ -344,7 +350,7 @@ background: #F3F3F3;
    .socials{
     margin: 20px;
     position: absolute;
-    top: 600px;
+    top: 700px;
    }
   
    
@@ -434,7 +440,7 @@ background: #F3F3F3;
   
 }
 
-@media (max-height: 700px){
+@media (max-height: 668px){
   .socials{
     top: 500px;
     font-size: 25px;
@@ -442,14 +448,14 @@ background: #F3F3F3;
 
   #timeleft{
     position: absolute;
-    margin-top: 570px;
+    margin-top: 580px;
     color: white;
     margin-left: 20px;
   }
   
   #launch{
     position: absolute;
-    margin-top: 550px;
+    margin-top: 560px;
     margin-left: 20px;
     color: white;
   
@@ -460,7 +466,7 @@ background: #F3F3F3;
   }
 
   .socials{
-    top: 470px;
+    top: 500px;
   }
 
   footer{
@@ -468,7 +474,11 @@ background: #F3F3F3;
   }
 }
 
-  
+@media (max-height: 750px){
+  .socials{
+    top: 510px;
+  }
+}
 
 
         
