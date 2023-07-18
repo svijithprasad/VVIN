@@ -181,7 +181,7 @@ footer {
     text-align: center;
   text-align: center;
   padding: 20px;
-  position: relative;
+  position: fixed;
   bottom: 0;
   left: 0;
   right: 0;
@@ -315,11 +315,7 @@ background: #F3F3F3;
       font-size: 50px;
     }
 
-   #logotext{
-    x: 5%;
-    y: 
-   }
-   
+  
     .fancy{
       margin: 30px 2px;
       margin-bottom: 0;
@@ -438,6 +434,38 @@ background: #F3F3F3;
   
 }
 
+@media (max-height: 700px){
+  .socials{
+    top: 500px;
+  }
+
+  #timeleft{
+    position: absolute;
+    margin-top: 570px;
+    color: white;
+    margin-left: 20px;
+  }
+  
+  #launch{
+    position: absolute;
+    margin-top: 550px;
+    margin-left: 20px;
+    color: white;
+  
+  }
+
+  .homevid{
+    margin-top: 15px;
+  }
+
+  .socials{
+    top: 470px;
+  }
+
+  footer{
+    font-size: 15px;
+  }
+}
 
   
 
