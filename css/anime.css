@@ -38,7 +38,7 @@
   position: absolute;
   text-align: center;
   line-height: 44px;
-  background: #ff4655;;
+  background: #ff4655;
   border-radius: 50%;
   transform: translateY(-50%);
   transition: transform 0.1s linear;
