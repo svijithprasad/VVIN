@@ -18,25 +18,25 @@
   padding: .4em;
 }
 
-.card p {
+.card a{
   height: 100%;
   flex: 1;
   overflow: hidden;
   cursor: pointer;
   border-radius: 2px;
   transition: all .5s;
-  background:  #0f1923;
+  background:  #ff4655;
   border: 1px solid #f4f4f4;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.card p:hover {
+.card a:hover {
   flex: 4;
 }
 
-.card p span {
+.card a span {
   min-width: 14em;
   padding: .5em;
   text-align: center;
@@ -45,9 +45,10 @@
   text-transform: uppercase;
   color: #f4f4f4;
   letter-spacing: .1em;
+  font-weight: 600;
 }
 
-.card p:hover span {
+.card a:hover span {
   transform: rotate(0);
 }
   /* When you change the amount of characters in the h1, you have to change 
