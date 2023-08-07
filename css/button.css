@@ -103,7 +103,7 @@
     bottom: -1px;
     left: -8px;
     width: 0;
-    background-color: #141414;
+    background-color:  #0f1923;
     transform: skew(-15deg);
     transition: all .2s ease;
   }

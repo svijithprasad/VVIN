@@ -10,7 +10,7 @@
     box-sizing: border-box;
 }    
 body{
-  background-color:  #0f1923;
+  background-color:  #080808;
   background-size: cover;
     
     
@@ -109,7 +109,7 @@ header{
     align-items: center;
     justify-content: space-between;
     padding: 0px;
-   background-color: #0f1923;
+   background-color: #080808;
     position: relative;
     z-index: 900;
     border-radius: 5px;
